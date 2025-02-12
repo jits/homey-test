@@ -1,0 +1,15 @@
+<div id="<%= dom_id project %>" class="py-5">
+  <h2 class="font-medium text-2xl text-gray-700">
+    <%= project.name %>
+  </h2>
+  <div class="mt-3 flex gap-6">
+    <p>
+      <span class="rounded px-3 py-2 text-blue-800 bg-blue-50">
+        <%= Project.statuses[project.status] %>
+      </span>
+    </p>
+    <p class="text-gray-500">
+      Created: <%= project.created_at.strftime("%B %d, %Y") %>
+    </p>
+  </div>
+</div>
