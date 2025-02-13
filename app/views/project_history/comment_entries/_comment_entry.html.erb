@@ -1,0 +1,8 @@
+<div>
+  <p class="italic">Comment</p>
+  <div class="shadow-sm border-gray-200 border rounded p-3 mt-3">
+    <%= comment_entry.comment.content %>
+  </div>
+  <p>By: <%= comment_entry.comment.user.email_address %></p>
+  <p>On: <%= comment_entry.timestamp.strftime("%B %d, %Y") %></p>
+</div>

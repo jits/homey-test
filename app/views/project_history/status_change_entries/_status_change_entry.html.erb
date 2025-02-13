@@ -1,0 +1,7 @@
+<div>
+  <p class="italic">Status change</p>
+  <p>Before: <%= status_change_entry.before %></p>
+  <p>After: <%= status_change_entry.after %></p>
+  <p>By: <%= status_change_entry.user.email_address %></p>
+  <p>On: <%= status_change_entry.timestamp.strftime("%B %d, %Y") %></p>
+</div>
